@@ -1,0 +1,6 @@
+@scientificCalculatorBackEnd_HostAddress = http://localhost:5141
+
+GET {{scientificCalculatorBackEnd_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
