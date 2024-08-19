@@ -15,6 +15,16 @@ builder.Services.AddDbContext<PremadeInnovationsContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("PremadeInnovations"));
 });
 
+/* for cors */
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins",
+        builder => builder.AllowAnyOrigin()
+                          .AllowAnyHeader()
+                          .AllowAnyMethod()
+    );
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -25,6 +35,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+/* for cors */
+app.UseCors("AllowAllOrigins");
 
 app.UseAuthorization();
 

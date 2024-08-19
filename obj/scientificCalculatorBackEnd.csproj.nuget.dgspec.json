@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\projects\\scientificCalculatorBackEnd\\scientificCalculatorBackEnd.csproj": {}
+    "D:\\projects\\scientificCalculator-back-end\\scientificCalculatorBackEnd.csproj": {}
   },
   "projects": {
-    "D:\\projects\\scientificCalculatorBackEnd\\scientificCalculatorBackEnd.csproj": {
+    "D:\\projects\\scientificCalculator-back-end\\scientificCalculatorBackEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\scientificCalculatorBackEnd\\scientificCalculatorBackEnd.csproj",
+        "projectUniqueName": "D:\\projects\\scientificCalculator-back-end\\scientificCalculatorBackEnd.csproj",
         "projectName": "scientificCalculatorBackEnd",
-        "projectPath": "D:\\projects\\scientificCalculatorBackEnd\\scientificCalculatorBackEnd.csproj",
+        "projectPath": "D:\\projects\\scientificCalculator-back-end\\scientificCalculatorBackEnd.csproj",
         "packagesPath": "C:\\Users\\MANI VIRAN\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\scientificCalculatorBackEnd\\obj\\",
+        "outputPath": "D:\\projects\\scientificCalculator-back-end\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MANI VIRAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -46,6 +46,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNet.WebApi.Cors": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.8, )"
@@ -65,6 +69,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.8, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
